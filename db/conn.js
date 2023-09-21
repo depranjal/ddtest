@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const DB = process.env.DATABASE;
 
 mongoose
-    .connect(DB, {
+    .connect("mongodb+srv://pranjal:Pranjal%40123@cluster0.dcvydli.mongodb.net/test?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
